@@ -38,7 +38,7 @@ const user = page.props.auth.user;
 
         <SettingsLayout>
             <div class="flex flex-col space-y-6">
-                <HeadingSmall title="Profile information" description="Update your name and email address" />
+                <HeadingSmall title="Profiili informatsioon" description="Update your name and email address" />
 
                 <Form v-bind="ProfileController.update.form()" class="space-y-6" v-slot="{ errors, processing, recentlySuccessful }">
                     <div class="grid gap-2">
@@ -56,7 +56,7 @@ const user = page.props.auth.user;
                     </div>
 
                     <div class="grid gap-2">
-                        <Label for="email">Email</Label>
+                        <Label for="email">Email address</Label>
                         <Input
                             id="email"
                             type="email"
